@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+/* Variaveis */
+$primary-color:#fff;
+$secondary-color:#ece8ea;
+$dark:#050505;
+$gray:#7a7a7a;
+/*------fecha variaveis--------*/
+
+/*Paleta de cores*/
+.bg-primary-color{
+    background-color: $primary-color;
+}
+
+
+.bg-secondary-color{
+    background-color: $secondary-color;
+}
+
+.bg-dark-color{
+    background-color: $dark;
+}
+
+
+.primary-color{
+    color: $dark;
+}
+
+
+.secondary-color{
+    color: $gray;
+}
+/*------fecha paleta de cores----------*/
+
+
+/* NAVBAR */
+
+#navbar{
+    border-bottom: 1px solid $gray;
+
+    a{
+        &:hover{
+            color: $gray;
+        }
+        &.active{
+            border-bottom: 1px solid $dark;
+        }
+    }
+}
+
+
+.navbar-brand{
+    display: flex;
+
+    img{
+        width: 40px;
+    }
+
+    span{
+        font-weight: 700;
+        font-size: 1.5em;
+        margin-left: 0.5em;
+    }
+}
+
+
+#navbar-items .navbar-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+
+#navbar-items .nav-item{
+    margin: 0 1em;
+}
+/*---------fecha navbar-------------*/
+
+/* Slider */
+
+#slider{
+    margin-top: 8em;
+    margin-bottom: 1em;
+
+    .carousel-caption{
+        bottom: 3em;
+
+        h5{
+            font-size: 2.5em;
+            text-shadow: #000 2px 2px;
+        }
+    }
+
+    .btn{
+        padding: 0.3 0.8em;
+        font-size: 1em;
+        margin-top: 1em;
+    }
+    
+
+    i{
+    color: #111;
+    font-size: 3em;
+    }
+
+}
+
+
+.btn{
+    border-radius: 0;
+}
+
+
+.carousel-indicators [data-bs-target] {
+    background-color: #222;
+    opacity: 0.8;
+    margin-bottom: 26px;
+
+    &.active{
+        background-color: #fff;
+    }
+}
+/*----------fecha slider-------------*/
+
+
+/* Mini Banners */
+
+#mini-banners{
+    margin-bottom: 4em;
+
+    .card{
+        padding: 2em 0.3em;
+        border-radius: 0;
+        margin-bottom: 1em;
+    }
+
+    i{
+        font-size: 4em;
+    }
+
+    .card-title{
+        margin-bottom: 1.5em;
+    }
+
+    .btn{
+        margin-top: 1.5em;
+        padding: 0.6em 1.2em;
+    }
+}
+
+/*----------fecha mini banners-------------*/
+
+
+/* Destaque */
+
+#featured-container,#info-container{
+    margin-bottom: 4em;
+
+    .title{
+        font-size: 1.75em;
+        margin-bottom: .4em;
+        position: relative;
+
+        &:before{
+            width: 75px;
+            border-top: 4px solid $gray;
+            content: '';
+            position: absolute;
+            bottom: 2em;
+        }
+    }
+
+
+    .col-md-4{
+        position: relative;
+        cursor: pointer;
+
+        &:hover{
+            .banner-content{
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .banner-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        opacity: 0.6;
+        transition: 0.5s;
+    }
+}
+
+
+#featured-imges{
+    margin-top: 2em;
+}
+/*----------fecha destaque -------------*/
+
+
+/* Info */
+
+#info-content{
+    margin-bottom: 4em;
+    padding: 4em 1em;
+}
+
+#info-numbers{
+    margin: 1.5em 0;
+
+    h3{
+        font-size: 3em;
+    }
+}
+
+
+#info-banner{
+    display: flex;
+    align-items: center;
+    margin-bottom: 2.5em;
+}
+
+
+/*----------fecha info -------------*/
+
+
+
+/* Footer top */
+
+#footer{
+    padding: 3em 2em;
+}
+
+
+#footer-top{
+    margin-bottom: 2em;
+
+    i{
+        color: #fff;
+    }
+
+    color: #fff;
+}
+
+
+#social-icons{
+    text-align: right;
+
+    i{
+        margin-right: 1em;
+        font-size: 1.5em;
+        cursor: pointer;
+
+        &:hover{
+            color: $gray;
+        }
+    }
+}
+
+/*----------fecha footer top -------------*/
+
+
+
+/* Footer details */
+
+#footer-details{
+    margin-bottom: 3em;
+
+    h4{
+        color: #fff;
+        margin-bottom: 1.5em;
+    }
+}
+
+#news-container{
+    input{
+        border-radius: 0;
+        border: none;
+    }
+}
+
+#links-container{
+    li{
+        margin-bottom: 0.5em;
+    }
+
+    a{
+        text-decoration: none;
+
+        &:hover{
+            color: #fff;
+        }
+    }
+}
+
+
+#news-container,
+#contact-container,
+#links-container{
+    padding: 0;
+    border: 0;
+    margin-bottom: 2em;
+}
+
+/*----------fecha footer details -------------*/
+
+
+/* Footer boottom */
+
+
+#footer-boottom{
+    border-top: 1px solid $gray;
+    padding-top: 2em;
+
+    i{
+        color: #e61e10;
+        margin-left: 0.3em;
+    }
+}
+
+/*----------fecha footer boottom -------------*/
+
+/*@media*/
+@media(min-width: 768px){
+    #slider{
+
+        .carousel-caption{
+            bottom: 20em;
+
+            h5{
+                font-size: 4em;
+                text-shadow: #000 2px 3px;
+            }
+        }
+
+        .btn{
+            padding: 0.6 1.6em;
+            font-size: 1.2em;
+        }
+    }
+
+    .carousel-indicators{
+        bottom: 3em;
+    }
+}
+
+
+
+@media(min-width: 768px){
+    #mini-banners{
+        margin-top: -6em;
+    }
+}
+
+
+@media(min-width: 768px){
+ 
+    #featured-container{
+    
+        .title{
+            font-size: 2.4em;
+
+    
+            &:before{
+                bottom: 1.5em;
+            }
+        }
+    }
+
+
+    #featured-images .banner-content{
+        opacity: 0;
+    }
+}
+
+
+@media(min-width: 768px){
+    #info-content{
+        padding: 3.5em;
+    }
+}
+
+
+
+@media(min-width: 768px){
+    #news-container{
+        padding-right: 2em;
+    }
+
+    #links-container{
+        padding-left: 2em;
+    }
+
+    #contact-container{
+        padding: 0 2em;
+        border-left: 1px solid $gray;
+        border-right: 1px solid $gray;
+    }
+}
+
+/*------fecha @media--------*/
